@@ -1,7 +1,7 @@
 const express = require("express");
-const router = express.router();
-const {} = require("../controllers/donor");
+const router = express.Router();
+const {Signup} = require("../controllers/donor");
 
-router.get("/");
+router.get("/signup",Signup);
 
 module.exports = router;

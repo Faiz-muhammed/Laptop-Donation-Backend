@@ -8,8 +8,8 @@ const state = {
 }
 
 module.exports.connect=function(done){
-     const url =process.env.MONGODB_URI || 'mongodb://localhost:27017'
-     const dbName=process.env.MONGODB_NAME  || 'BrototypeDB'
+     const url =process.env.MONGODB_URI || 'mongodb+srv://brocamp:bogOR2RYbAMfkpNj@donationapp.fy60s.mongodb.net/DonationApp?retryWrites=true&w=majority'
+     const dbName=process.env.MONGODB_NAME  || 'DonationApp'
      mongoClient.connect(url,(err,data)=>{
         if(err){
             console.log("err",err);

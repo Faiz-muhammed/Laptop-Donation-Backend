@@ -9,6 +9,7 @@ const bodyParser = require('body-parser')
 
 const UserRouter = require('./Routes/user')
 const AdminRouter = require('./Routes/admin')
+const DonorRouter = require('./Routes/donor')
 const db = require('./config/connection');
 
 
@@ -29,6 +30,7 @@ app.use(express.json());
 
 app.use('/api/v1/user/', UserRouter);
 app.use('/api/v1/admin/', AdminRouter);
+app.use('/api/v1/donor/', DonorRouter);
 
 app.use(morgan('tiny'))
 
